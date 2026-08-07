@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 时代产研开发流程 · 方法论沉淀 — 于恺雯</title>
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #fafafa;
+    color: #1f2937;
+    line-height: 1.6;
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: #fff;
+    padding: 56px 24px 40px;
+    text-align: center;
+  }
+  .hero h1 {
+    margin: 0 0 12px;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .hero p {
+    margin: 0;
+    font-size: 15px;
+    opacity: 0.9;
+  }
+
+  /* ===== Sticky TOC ===== */
+  .toc-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+  .toc {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .toc-label {
+    color: #6b7280;
+    font-weight: 500;
+    margin-right: 4px;
+  }
+  .toc a {
+    color: #1e3a8a;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.15s;
+  }
+  .toc a:hover {
+    background: #eff6ff;
+  }
+
+  /* ===== Sections ===== */
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  .section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 32px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    scroll-margin-top: 70px;
+  }
+  .section h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+    color: #1e3a8a;
+    font-weight: 600;
+  }
+  .section .subtitle {
+    margin: 0 0 20px;
+    font-size: 13px;
+    color: #6b7280;
+  }
+  .figure {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 16px;
+    overflow: auto;
+  }
+  .figure object {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .figure-hint {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #9ca3af;
+  }
+
+  /* ===== Footer ===== */
+  footer {
+    text-align: center;
+    padding: 32px 24px 48px;
+    color: #9ca3af;
+    font-size: 13px;
+  }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 24px; }
+    .toc { font-size: 12px; padding: 10px 12px; }
+    .toc a { padding: 5px 8px; }
+    .section { padding: 20px 16px; }
+    .section h2 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>AI 时代产研开发流程 · 方法论沉淀</h1>
+  <p>整理:于恺雯 · 5 张矢量流程图,浏览器内可任意缩放查看</p>
+</header>
+
+<nav class="toc-wrap">
+  <div class="toc">
+    <span class="toc-label">目录</span>
+    <a href="#sec1">#1 全量重构</a>
+    <a href="#sec2">#2 能力分级</a>
+    <a href="#sec3">#3 升级路径</a>
+    <a href="#sec4">#4 团队配置</a>
+    <a href="#sec5">#5 流程选型</a>
+  </div>
+</nav>
+
+<main>
+
+  <section id="sec1" class="section">
+    <h2>1. AI 时代的产研开发流程 v3 · 全量重构</h2>
+    <p class="subtitle">主线流程:从需求到交付的完整路径</p>
+    <div class="figure">
+      <object type="image/svg+xml" data="ai-dev-flow-v3-overview.svg" aria-label="全量重构流程图"></object>
+    </div>
+    <p class="figure-hint">提示:SVG 矢量图,可在浏览器内用滚轮缩放、拖动查看细节</p>
+  </section>
+
+  <section id="sec2" class="section">
+    <h2>2. 附录 · 研发能力分级对比图</h2>
+    <p class="subtitle">起点:看清团队当前位于哪个能力级别</p>
+    <div class="figure">
+      <object type="image/svg+xml" data="appendix-capability-levels.svg" aria-label="能力分级对比图"></object>
+    </div>
+  </section>
+
+  <section id="sec3" class="section">
+    <h2>3. 附录 · 能力升级路径图</h2>
+    <p class="subtitle">成长:从当前级别到下一级别的演进路径</p>
+    <div class="figure">
+      <object type="image/svg+xml" data="appendix-upgrade-path.svg" aria-label="能力升级路径图"></object>
+    </div>
+  </section>
+
+  <section id="sec4" class="section">
+    <h2>4. 附录 · 团队配置与人因</h2>
+    <p class="subtitle">组织:不同级别团队的画像与人员配置</p>
+    <div class="figure">
+      <object type="image/svg+xml" data="appendix-team-roles.svg" aria-label="团队配置与人因"></object>
+    </div>
+  </section>
+
+  <section id="sec5" class="section">
+    <h2>5. 附录 · 能力分级与流程选型</h2>
+    <p class="subtitle">落地:按团队能力级别匹配对应的产研流程</p>
+    <div class="figure">
+      <object type="image/svg+xml" data="appendix-process-by-level.svg" aria-label="能力分级与流程选型"></object>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  整理:于恺雯 · 2026 · 矢量图支持浏览器内缩放
+</footer>
+
+</body>
+</html>
